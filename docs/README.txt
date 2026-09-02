@@ -7,6 +7,9 @@ This package is arranged for GitHub Pages with the publishing source set to:
 
 The live website files are inside docs/.
 
+CONTENT PANEL
+Open docs/admin/ on the published site to edit the image, artist name, description, age and group for any of the 14 pages. Images are selected from a dropdown containing the artwork already in the project. The preview updates while you type and changes are saved in that browser. Download content.js from the panel and replace docs/content.js in GitHub to publish the changes for everyone.
+
 Open docs/index.html in a browser for the original artist banner page. The 13 additional banner pages are in docs/artwork-01/ through docs/artwork-13/.
 
 FOLDER LAYOUT

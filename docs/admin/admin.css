@@ -1,0 +1,27 @@
+:root{--ink:#20231f;--paper:#f3f0e7;--light:#faf8f2;--heritage:#9d472d;--line:#d7d0c2;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--sans)}
+.admin-shell{width:1200px;max-width:calc(100% - 3rem);margin:3rem auto;background:var(--light);box-shadow:0 16px 50px #0001}
+header,form,.publish{padding:clamp(1.25rem,5vw,3rem)}
+header{background:#171916;color:white}
+h1,h2{margin:.15em 0 .35em;font-family:var(--serif);font-weight:500;line-height:1.05}
+h1{font-size:clamp(2.3rem,8vw,4.5rem)}
+h2{font-size:2rem}
+.eyebrow{margin:0;color:#e6b09f;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+label{display:block;margin:0 0 1.2rem;font-weight:700}
+input,select,textarea{display:block;width:100%;margin-top:.4rem;padding:.8rem;border:1px solid var(--line);border-radius:0;background:white;color:var(--ink);font:inherit}
+textarea{resize:vertical}
+input:focus,select:focus,textarea:focus,button:focus,a:focus{outline:3px solid #315e6855;outline-offset:2px}
+.preview-wrap{display:grid;place-items:center;min-height:220px;margin:0 0 1.2rem;background:#171916}
+.preview-wrap img{display:block;max-width:100%;max-height:430px;object-fit:contain}
+.workspace{display:grid;grid-template-columns:minmax(440px,1fr) minmax(380px,.9fr)}
+.live-preview{padding:3rem 3rem 3rem 0}
+.live-preview h2{margin-top:0}
+.live-preview iframe{width:100%;height:760px;border:1px solid var(--line);background:white}
+.hint{margin:-.7rem 0 1.4rem;color:#62645e;font-size:.84rem}
+.two-column{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.6rem}
+button,.button{min-height:46px;padding:.7rem 1rem;border:1px solid var(--heritage);background:var(--heritage);color:white;font:700 1rem var(--sans);text-decoration:none;cursor:pointer}
+.button{display:inline-flex;align-items:center}.secondary,.quiet{background:transparent;color:var(--heritage)}
+.publish{border-top:1px solid var(--line)}
+#status{min-height:1.5em;color:#315e68;font-weight:700}

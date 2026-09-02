@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Content panel | Hastings Heritage</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<main class="admin-shell">
+<header>
+<p class="eyebrow">Hastings Heritage</p>
+<h1>Page content panel</h1>
+<p>Edit all 14 artist pages here. Changes are saved in this browser while you work.</p>
+</header>
+<div class="workspace">
+<form id="editor">
+<label>Page<select id="page" name="page"></select></label>
+<div class="preview-wrap"><img id="imagePreview" alt="Selected artwork preview"></div>
+<label>Artwork image<select id="image" name="image" required></select></label>
+<p class="hint">Choose from the images already stored in the website files.</p>
+<label>Artist name<input id="name" name="name" required></label>
+<label>Small heading above name<input id="label" name="label"></label>
+<label>Description<textarea id="description" name="description" rows="9"></textarea></label>
+<div class="two-column">
+<label>Age or category<input id="age" name="age"></label>
+<label>School, community or group<input id="group" name="group"></label>
+</div>
+<div class="actions">
+<button type="submit">Save page</button>
+<a id="preview" class="button secondary" target="_blank">Preview page</a>
+</div>
+</form>
+<aside class="live-preview">
+<h2>Live preview</h2>
+<iframe id="livePreview" title="Live preview of selected artist page"></iframe>
+</aside>
+</div>
+<section class="publish">
+<h2>Publish your changes</h2>
+<p>When all pages are ready, download the updated content file and replace <strong>docs/content.js</strong> in the GitHub repository.</p>
+<button id="download" type="button">Download content.js</button>
+<button id="reset" class="quiet" type="button">Discard browser edits</button>
+<p id="status" role="status" aria-live="polite"></p>
+</section>
+</main>
+<script src="../content.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
